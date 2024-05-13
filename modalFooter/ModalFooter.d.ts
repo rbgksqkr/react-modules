@@ -1,5 +1,5 @@
-type ContainerPosition = 'row' | 'row-reverse' | 'column' | 'column-reverse';
-type FlexAlign = 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+type ContainerPosition = Extract<React.CSSProperties['flexDirection'], 'row' | 'row-reverse' | 'column' | 'column-reverse'>;
+type FlexAlign = Extract<React.CSSProperties['justifyContent'], 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly'>;
 type ContainerRowAlign = FlexAlign;
 type ContainerColAlign = FlexAlign;
 export interface ContainerProps extends React.HTMLAttributes<HTMLElement> {
