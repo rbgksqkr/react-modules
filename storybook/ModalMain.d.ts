@@ -18,6 +18,5 @@ declare const Modal: (({ isOpen, size, position, isAnimation, animationDuration,
     CloseButton: ({ label, onClose, size, style, ...rest }: PropsWithChildren<import('./closeButton/CloseButton').CloseButtonProps>) => import("react/jsx-runtime").JSX.Element;
     ConfirmButton: ({ label, onConfirm, size, style, ...rest }: PropsWithChildren<import('./confirmButton/ConfirmButton').CloseButtonProps>) => import("react/jsx-runtime").JSX.Element;
     Footer: ({ position, justifyContent, alignItems, children, ...rest }: PropsWithChildren<import('./modalFooter/ModalFooter').ContainerProps>) => import("react/jsx-runtime").JSX.Element;
-    Input: ({ value, onChange, ...rest }: import('./modalInput/ModalInput').ModalInputProps) => import("react/jsx-runtime").JSX.Element;
 };
 export default Modal;
