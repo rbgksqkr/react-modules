@@ -20392,7 +20392,7 @@ const nT = {
   size: K,
   position: b = "center",
   isAnimation: Fe = !1,
-  duration: $e,
+  animationDuration: $e,
   style: Le,
   children: g,
   ...Ct
@@ -20404,7 +20404,15 @@ const nT = {
     delay: $e
   }), Ze = Fe ? ue : lk[b], Z = ik[b], fe = K ? uk[K] : "";
   return ce ? /* @__PURE__ */ Wr.jsx(Wr.Fragment, { children: lT.createPortal(
-    /* @__PURE__ */ Wr.jsx("div", { className: `${Z} ${fe}`, style: Le, children: /* @__PURE__ */ Wr.jsx("div", { className: Ze, style: { animationDuration: `${$e}ms` }, ...Ct, children: g }) }),
+    /* @__PURE__ */ Wr.jsx("div", { className: `${Z} ${fe}`, style: Le, children: /* @__PURE__ */ Wr.jsx(
+      "div",
+      {
+        className: Ze,
+        style: { animationDuration: `${$e}ms` },
+        ...Ct,
+        children: g
+      }
+    ) }),
     document.body
   ) }) : null;
 }, pk = Object.assign(ok, {

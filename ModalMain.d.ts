@@ -7,9 +7,9 @@ interface ModalMainProps extends React.HTMLAttributes<HTMLDivElement> {
     size?: ModalSize;
     position?: ModalPosition;
     isAnimation?: boolean;
-    duration?: number;
+    animationDuration?: number;
 }
-declare const Modal: (({ isOpen, size, position, isAnimation, duration, style, children, ...rest }: PropsWithChildren<ModalMainProps>) => import("react/jsx-runtime").JSX.Element | null) & {
+declare const Modal: (({ isOpen, size, position, isAnimation, animationDuration, style, children, ...rest }: PropsWithChildren<ModalMainProps>) => import("react/jsx-runtime").JSX.Element | null) & {
     Dimmed: ({ onDimmedClick, style, ...rest }: import('./modalDimmed/ModalDimmed').ModalDimmedProps) => import('react').ReactPortal;
     Header: ({ style, children, ...rest }: PropsWithChildren<import('./modalHeader/ModalHeader').ModalHeaderProps>) => import("react/jsx-runtime").JSX.Element;
     Title: ({ title }: import('./modalTitle/ModalTitle').ModalTitleProps) => import("react/jsx-runtime").JSX.Element;
